@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+   --selected-theme-background-color: var(--blue-theme-background-color);
+   --selected-theme-main-color: var(--blue-theme-main-color);
+   --selected-theme-sub-text-color: var(--blue-theme-sub-text-color);
+   --selected-theme-nav-background-color: var(--blue-theme-nav-background-color);
+
+  /* primary color */
+  --gray-theme-background-color : #000;
+  --gray-theme-main-color: #ccc ;
+  --gray-theme-sub-text-color: #fff;
+  --gray-theme-nav-background-color: #222;
+
+  /* darkblue color */
+  --blue-theme-background-color : #000;
+  --blue-theme-main-color: skyblue ;
+  --blue-theme-sub-text-color: #fff;
+  --blue-theme-nav-background-color: #222;
+
+  /* yellow color */
+  --yellow-theme-background-color : #000;
+  --yellow-theme-main-color: #ffdd40 ;
+  --yellow-theme-sub-text-color: #fff;
+  --yellow-theme-nav-background-color: #222;
+
+  /* yellow color */
+  --green-theme-background-color : #000;
+  --green-theme-main-color: #6ac045 ;
+  --green-theme-sub-text-color: #fff;
+  --green-theme-nav-background-color: #222;
+
+  -font-base:'Roboto Slab', serif;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+html{
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body{
+  background: var(--selected-theme-background-color);
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+}
+
