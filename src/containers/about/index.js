@@ -15,7 +15,7 @@ export const About = () => {
       <Animate play duration={2.5} start={{ opacity: 0.1 }} end={{ opacity: 1 }} delay={0.2}>
       <div className='about__content'>
         <div className='about__content__personalWrapper'>
-          <h3 className='developerContent'>Front end developer</h3>
+          <h3 className='developerContent'>Front End Developer</h3>
           <p>Hello! My name is Namrata, 
             My interest in web development started back in 2016 when I build a Web Application as a final year project. In my project I learnt basic skills 
             about HTML, CSS and JS.
@@ -26,7 +26,7 @@ export const About = () => {
             which is easy to use, and have an positive impact. And to achieve the same I've been working since last six
             years in Web & Mobile Application domain using the latest technologies.
             </p>
-          <h3 className='personalContent'>personal information</h3>
+          <h3 className='personalContent'>Personal Information</h3>
           <ul>
             {
               personalData.map((item, key) => (
