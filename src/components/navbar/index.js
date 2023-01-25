@@ -19,8 +19,8 @@ export const Navbar = () => {
                     <ul className={click ? 'navbar__container__menu active' : 'navbar__container__menu'} >
                         {
                             navMenus.map((item, key) => (
-                                <li key={key} className='navbar__container__menu__item'>
-                                    <Link to={item.to} className='navbar__container__menu__item__links'>{item.label}</Link>
+                                <li key={key} className='navbar__container__menu__item' onClick={handleClick}>
+                                    <Link to={item.to} className='navbar__container__menu__item__links' >{item.label}</Link>
                                 </li>
                             ))
                         }

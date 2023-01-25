@@ -80,7 +80,7 @@
   }
 }
 
-@media only screen and(max-width: 768px){
+@media only screen and (max-width: 768px){
     .contact__content_form{
         text-align: center;
         &__controlsWrapper{
@@ -89,3 +89,9 @@
         }
     }
 }
+@media only screen and (max-width: 460px){
+  .contact__content__form__controlsWrapper{
+          grid-template-columns: auto;
+      }
+  }
+

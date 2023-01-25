@@ -5,8 +5,9 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 20;
+  z-index: 9;
   background-color: var(--selected-theme-nav-background-color);
+  
   &__container {
     display: flex;
     justify-content: center;
@@ -14,6 +15,7 @@
     height: 80px;
     width: 100%;
     padding: 0 20px;
+    overflow: hidden;
     &__logo {
       color: var(--selected-theme-main-color);
       cursor: pointer;
@@ -24,6 +26,7 @@
       display: flex;
       list-style: none;
       text-align: center;
+     
       &__item {
         line-height: 40px;
         margin-right: 1.5rem;
@@ -64,21 +67,28 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        opacity: 0;
         position: absolute;
-        top: 80px;
-        left:-110%;
-        opacity: 1;
+        top:80px;
         transition: 0.5s ease-in-out;
+        height: 0;
+        overflow: hidden;
         &__item{
             border-bottom: 1px solid #ddd;
             margin: 0;
             padding: 20px 0;
+            display:off;
+            &:hover::after {
+              width: 10%;
+              margin: 0 auto;
+            }
         }
         &.active{
-            background: #fff;
-            left:0;
+          background: #fff;
             opacity: 1;
             transition: 0.5s ease-in-out;
+            height: 100vh;
+            
         }
     }
     .nav-icon{
